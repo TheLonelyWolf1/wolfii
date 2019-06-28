@@ -70,10 +70,6 @@ async def on_ready():
 @commands.bot_has_permissions(mention_everyone=True)
 @commands.has_permissions(manage_messages=True)
 @commands.bot_has_permissions(manage_messages=True)
-@commands.has_permissions(kick_members=True)
-@commands.bot_has_permissions(kick_members=True)
-@commands.has_permissions(ban_members=True)
-@commands.bot_has_permissions(ban_members=True)
 async def on_message(message):
     author = message.author
     channel = message.channel
