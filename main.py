@@ -47,10 +47,7 @@ result = (
 async def on_ready():
     print("Date: " + datetime.datetime.now().strftime("%d-%m-%y %H:%M:%S") + "| Running on: " + sys.platform)
     print("Bot Name: " + bot.user.name)
-    if SECRETS.SHOWCASE == "false":
-        print("Bot ID: " + bot.user.id)
-    if bot.user.id == "591690480702586901":
-        print("Bot Version: " + bot_version)
+    print("Bot ID: " + bot.user.id)
     print("Discord Version: " + discord.__version__)
     print("Connected on '" + str(len(bot.servers)) + "' servers and overwatching '" + str(len(set(bot.get_all_members()))) + "' players!")
     await bot.change_presence(game=discord.Game(name=title))
